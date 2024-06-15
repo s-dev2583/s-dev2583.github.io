@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PDF to Image Uploader</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>PDF to Image Uploader</h1>
+        <form id="pdfForm" enctype="multipart/form-data">
+            <div class="file-upload">
+                <input type="file" id="pdfFile" name="pdfFile" accept="application/pdf" required>
+            </div>
+            <button type="submit">Convert and Upload</button>
+        </form>
+        <div class="spinner" id="spinner"></div>
+        <div id="message"></div>
+    </div> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+    <script src="upload.js"></script>
+</body>
+</html>
